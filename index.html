@@ -4,7 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soria Proyect S.A.C · Diseño, Construcción y Logística Corporativa</title>
-<meta name="description" content="Soria Proyect S.A.C: diseño y construcción de stands mineros, oficinas corporativas, casas y remodelaciones, con suministro y logística corporativa en Perú.">
+<meta name="description" content="Soria Proyect S.A.C. desarrolla stands para ferias mineras, oficinas corporativas, construcción y remodelación, y suministro con logística en Perú. Solicite una cotización.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.soriaproyect.com.pe/">
+<meta property="og:url" content="https://www.soriaproyect.com.pe/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Soria Proyect S.A.C.",
+  "url": "https://www.soriaproyect.com.pe/",
+  "email": "soria.proyects@gmail.com",
+  "telephone": "+51 987 111 653",
+  "taxID": "20614992051",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Las Artes Norte 1419",
+    "addressLocality": "San Borja",
+    "addressRegion": "Lima",
+    "addressCountry": "PE"
+  },
+  "areaServed": "Perú",
+  "description": "Diseño y construcción de stands para empresas mineras, oficinas corporativas, viviendas y remodelaciones; suministro y logística corporativa."
+}
+</script>
 <meta property="og:title" content="Soria Proyect S.A.C · Diseño y Construcción Integral">
 <meta property="og:description" content="Creamos espacios que inspiran, innovan y perduran.">
 <meta name="theme-color" content="#1F3A5F">
@@ -39,6 +65,8 @@
   .brand small { display: block; font-size: 9.5px; letter-spacing: 2px; color: var(--slate); font-weight: 400; margin-top: 3px; }
   nav a { margin-left: 24px; font-size: 12px; text-decoration: none; color: var(--slate); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; }
   nav a:hover { color: var(--teal); }
+  .menu-toggle { display: none; border: 1px solid var(--line); background: var(--white); color: var(--navy); padding: 10px 12px; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 1px; cursor: pointer; }
+  .menu-toggle:focus-visible, a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
   .cta-nav { background: var(--navy); color: var(--white) !important; padding: 11px 18px; }
   .cta-nav:hover { background: var(--teal); color: var(--white) !important; }
 
@@ -141,6 +169,9 @@
   footer.site { padding: 26px 0; font-size: 12px; color: var(--mist); background: var(--navy-deep); }
   footer.site .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
   footer.site span { color: #AAB7C4; }
+  .floating-wa { position: fixed; right: 22px; bottom: 22px; z-index: 20; display: inline-flex; align-items: center; gap: 9px; padding: 13px 17px; background: #167C58; color: #fff; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .3px; box-shadow: 0 8px 24px rgba(0,0,0,.2); border-radius: 3px; }
+  .floating-wa:hover { background: #116747; }
+  .floating-wa span { font-size: 17px; }
 
   @media (max-width: 920px) {
     .grid3 { grid-template-columns: 1fr 1fr; }
@@ -150,7 +181,12 @@
     .about { grid-template-columns: 1fr; }
     .about-photo { min-height: 260px; }
     .contact-grid { grid-template-columns: 1fr; gap: 36px; }
-    nav a:not(.cta-nav) { display: none; }
+    .bar { position: relative; }
+    .menu-toggle { display: inline-flex; align-items: center; gap: 8px; }
+    nav { display: none; position: absolute; top: 76px; left: 0; right: 0; padding: 14px 24px 20px; background: var(--white); border-bottom: 1px solid var(--line); box-shadow: 0 12px 20px rgba(23,43,71,.10); }
+    nav.is-open { display: flex; flex-direction: column; gap: 0; }
+    nav a, nav a:not(.cta-nav) { display: block; margin: 0; padding: 14px 4px; border-bottom: 1px solid var(--line); }
+    nav .cta-nav { margin-top: 12px; padding: 13px 16px; text-align: center; border-bottom: 0; }
   }
   @media (max-width: 600px) {
     .grid3, .steps, .pillars .container { grid-template-columns: 1fr; }
@@ -180,7 +216,10 @@
       </svg>
       <div><b>SORIA PROYECT</b><small>DISEÑO Y CONSTRUCCIÓN INTEGRAL</small></div>
     </a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">
+      <span aria-hidden="true">☰</span> MENÚ
+    </button>
+    <nav id="site-nav" aria-label="Navegación principal">
       <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
@@ -372,7 +411,7 @@
           </div>
           <div class="contact-item">
             <span>Teléfono / WhatsApp</span>
-            <p>+51 987 111 653</p>
+            <p><a href="tel:+51987111653">+51 987 111 653</a></p>
           </div>
           <div class="contact-item">
             <span>Dirección</span>
@@ -391,6 +430,10 @@
 
 </main>
 
+<a class="floating-wa" href="https://wa.me/51987111653?text=Hola%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" aria-label="Solicitar cotización por WhatsApp">
+  <span aria-hidden="true">↗</span> Cotizar por WhatsApp
+</a>
+
 <footer class="site">
   <div class="container">
     <span>Soria Proyect S.A.C · RUC 20614992051</span>
@@ -398,5 +441,28 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#site-nav');
+    if (!toggle || !nav) return;
+    function closeMenu() {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+    }
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
+    });
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 920) closeMenu();
+    });
+  }());
+</script>
 </body>
 </html>
