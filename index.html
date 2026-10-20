@@ -4,7 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soria Proyect S.A.C · Diseño, Construcción y Logística Corporativa</title>
-<meta name="description" content="Soria Proyect S.A.C: diseño y construcción de stands mineros, oficinas corporativas, casas y remodelaciones, con suministro y logística corporativa en Perú.">
+<meta name="description" content="Soria Proyect S.A.C. desarrolla stands para ferias mineras, oficinas corporativas, construcción y remodelación, y suministro con logística en Perú. Solicite una cotización.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.soriaproyect.com.pe/">
+<meta property="og:url" content="https://www.soriaproyect.com.pe/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Soria Proyect S.A.C.",
+  "url": "https://www.soriaproyect.com.pe/",
+  "email": "soria.proyects@gmail.com",
+  "telephone": "+51 987 111 653",
+  "taxID": "20614992051",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Las Artes Norte 1419",
+    "addressLocality": "San Borja",
+    "addressRegion": "Lima",
+    "addressCountry": "PE"
+  },
+  "areaServed": "Perú",
+  "description": "Diseño y construcción de stands para empresas mineras, oficinas corporativas, viviendas y remodelaciones; suministro y logística corporativa."
+}
+</script>
 <meta property="og:title" content="Soria Proyect S.A.C · Diseño y Construcción Integral">
 <meta property="og:description" content="Creamos espacios que inspiran, innovan y perduran.">
 <meta name="theme-color" content="#1F3A5F">
@@ -12,16 +38,16 @@
 <style>
   /* Sistema de color corporativo */
   :root {
-    --navy: #1F3A5F;
-    --navy-deep: #172B47;
-    --teal: #1A9CA0;
-    --gold: #B08D57;
-    --slate: #5C6B7A;
-    --mist: #8A96A3;
-    --soft: #F5F7F9;
-    --line: #D9DEE4;
-    --ink: #2B3A4A;
-    --white: #FFFFFF;
+    --navy: #252B31;
+    --navy-deep: #151A1F;
+    --teal: #C76D3A;
+    --gold: #B58A5A;
+    --slate: #626B73;
+    --mist: #899198;
+    --soft: #F4F1EB;
+    --line: #E1DDD6;
+    --ink: #29313A;
+    --white: #FFFEFC;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -39,17 +65,19 @@
   .brand small { display: block; font-size: 9.5px; letter-spacing: 2px; color: var(--slate); font-weight: 400; margin-top: 3px; }
   nav a { margin-left: 24px; font-size: 12px; text-decoration: none; color: var(--slate); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; }
   nav a:hover { color: var(--teal); }
+  .menu-toggle { display: none; border: 1px solid var(--line); background: var(--white); color: var(--navy); padding: 10px 12px; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 1px; cursor: pointer; }
+  .menu-toggle:focus-visible, a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
   .cta-nav { background: var(--navy); color: var(--white) !important; padding: 11px 18px; }
   .cta-nav:hover { background: var(--teal); color: var(--white) !important; }
 
   /* Portada */
   .hero { position: relative; color: var(--white); background: var(--navy); overflow: hidden; }
-  .hero::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='none' stroke='%231A9CA0' stroke-width='2' stroke-opacity='0.85' stroke-linecap='square'%3E%3Cpath d='M0 10H20V0'/%3E%3Cpath d='M20 20H40V30'/%3E%3Cpath d='M0 30H10V40'/%3E%3Cpath d='M30 0V10H40'/%3E%3Cpath d='M10 20V30H20'/%3E%3Cpath d='M30 20V40'/%3E%3C/g%3E%3C/svg%3E"); opacity: 0.45; }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='none' stroke='%23C76D3A' stroke-width='2' stroke-opacity='0.85' stroke-linecap='square'%3E%3Cpath d='M0 10H20V0'/%3E%3Cpath d='M20 20H40V30'/%3E%3Cpath d='M0 30H10V40'/%3E%3Cpath d='M30 0V10H40'/%3E%3Cpath d='M10 20V30H20'/%3E%3Cpath d='M30 20V40'/%3E%3C/g%3E%3C/svg%3E"); opacity: 0.45; }
   .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 40%; background: linear-gradient(to bottom, rgba(31,58,95,0), var(--navy)); }
   .hero .container { position: relative; z-index: 1; padding: 128px 24px 120px; }
   .kicker { font-size: 12px; letter-spacing: 4px; color: var(--teal); text-transform: uppercase; margin: 0 0 18px; font-weight: 600; }
   .hero h1 { font-size: clamp(38px, 5.6vw, 68px); line-height: 1.08; margin: 0 0 20px; font-weight: 700; letter-spacing: 0.5px; max-width: 820px; }
-  .hero h1 span { font-weight: 300; color: #BFE7E8; }
+  .hero h1 span { font-weight: 300; color: #F0C8AE; }
   .hero p.lead { font-size: 18px; max-width: 640px; color: #D3DFEA; margin: 0 0 36px; }
   .btn { display: inline-block; padding: 15px 26px; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; text-decoration: none; font-weight: 600; border: 1px solid transparent; transition: background .2s, color .2s, border-color .2s; }
   .btn.primary { background: var(--teal); color: var(--white); }
@@ -62,8 +90,8 @@
   .pillars .container { display: grid; grid-template-columns: repeat(3, 1fr); }
   .pillars div { padding: 26px 24px; border-right: 1px solid rgba(255,255,255,0.12); }
   .pillars div:last-child { border-right: none; }
-  .pillars b { display: block; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #BFE7E8; margin-bottom: 4px; }
-  .pillars span { font-size: 14px; color: #C9D6E2; }
+  .pillars b { display: block; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #F0C8AE; margin-bottom: 4px; }
+  .pillars span { font-size: 14px; color: #D9DDE1; }
 
   /* Secciones */
   section { padding: 104px 0; }
@@ -124,15 +152,15 @@
 
   /* Contacto */
   .contact { background: var(--navy); color: var(--white); }
-  .contact .eyebrow { color: #BFE7E8; }
+  .contact .eyebrow { color: #F0C8AE; }
   .contact h2.title { color: var(--white); }
-  .contact .subtitle { color: #C9D6E2; }
+  .contact .subtitle { color: #D9DDE1; }
   .contact .rule { background: var(--teal); }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
   .contact-item { margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid rgba(255,255,255,0.14); }
-  .contact-item span { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #BFE7E8; margin-bottom: 6px; }
+  .contact-item span { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #F0C8AE; margin-bottom: 6px; }
   .contact-item a, .contact-item p { font-size: 18px; margin: 0; color: var(--white); text-decoration: none; }
-  .contact-side p { color: #C9D6E2; margin: 0 0 20px; font-size: 15px; }
+  .contact-side p { color: #D9DDE1; margin: 0 0 20px; font-size: 15px; }
   .btn-wa { background: var(--teal); color: var(--white); }
   .btn-wa:hover { background: var(--white); color: var(--navy); }
   .btn-outline { border-color: var(--white); color: var(--white); margin-left: 12px; }
@@ -141,6 +169,9 @@
   footer.site { padding: 26px 0; font-size: 12px; color: var(--mist); background: var(--navy-deep); }
   footer.site .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
   footer.site span { color: #AAB7C4; }
+  .floating-wa { position: fixed; right: 22px; bottom: 22px; z-index: 20; display: inline-flex; align-items: center; gap: 9px; padding: 13px 17px; background: #167C58; color: #fff; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .3px; box-shadow: 0 8px 24px rgba(0,0,0,.2); border-radius: 3px; }
+  .floating-wa:hover { background: #116747; }
+  .floating-wa span { font-size: 17px; }
 
   @media (max-width: 920px) {
     .grid3 { grid-template-columns: 1fr 1fr; }
@@ -150,7 +181,12 @@
     .about { grid-template-columns: 1fr; }
     .about-photo { min-height: 260px; }
     .contact-grid { grid-template-columns: 1fr; gap: 36px; }
-    nav a:not(.cta-nav) { display: none; }
+    .bar { position: relative; }
+    .menu-toggle { display: inline-flex; align-items: center; gap: 8px; }
+    nav { display: none; position: absolute; top: 76px; left: 0; right: 0; padding: 14px 24px 20px; background: var(--white); border-bottom: 1px solid var(--line); box-shadow: 0 12px 20px rgba(23,43,71,.10); }
+    nav.is-open { display: flex; flex-direction: column; gap: 0; }
+    nav a, nav a:not(.cta-nav) { display: block; margin: 0; padding: 14px 4px; border-bottom: 1px solid var(--line); }
+    nav .cta-nav { margin-top: 12px; padding: 13px 16px; text-align: center; border-bottom: 0; }
   }
   @media (max-width: 600px) {
     .grid3, .steps, .pillars .container { grid-template-columns: 1fr; }
@@ -160,6 +196,22 @@
     section { padding: 76px 0; }
     h2.title { font-size: 29px; }
   }
+
+  /* Dirección visual 2026: grafito, marfil cálido y cobre; contraste sobrio y enfoque arquitectónico. */
+  header.site { background: rgba(255,254,252,.97); }
+  .hero { background: linear-gradient(125deg, #151A1F 0%, #252B31 64%, #343B40 100%); }
+  .hero::before { opacity: .28; }
+  .hero::after { background: linear-gradient(to bottom, rgba(37,43,49,0), #252B31); }
+  .pillars { background: #20262B; }
+  section.alt { background: #F4F1EB; }
+  .card, .project, .cap { background: #FFFEFC; }
+  .icon { background: #F7E9DF; color: #252B31; }
+  .card::before { background: #C76D3A; }
+  .btn.primary, .btn-wa, .card .badge { background: #C76D3A; }
+  .btn.primary:hover, .btn-wa:hover { background: #A95327; color: #FFFEFC; }
+  .contact { background: linear-gradient(125deg, #151A1F, #252B31); }
+  .floating-wa { background: #167C58; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
 </style>
 </head>
 <body>
@@ -180,7 +232,10 @@
       </svg>
       <div><b>SORIA PROYECT</b><small>DISEÑO Y CONSTRUCCIÓN INTEGRAL</small></div>
     </a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">
+      <span aria-hidden="true">☰</span> MENÚ
+    </button>
+    <nav id="site-nav" aria-label="Navegación principal">
       <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
@@ -372,12 +427,12 @@
           </div>
           <div class="contact-item">
             <span>Teléfono / WhatsApp</span>
-            <p>+51 987 111 653</p>
+            <p><a href="tel:+51987111653">+51 987 111 653</a></p>
           </div>
           <div class="contact-item">
             <span>Dirección</span>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Las+Artes+Norte+1419+San+Borja+Lima" target="_blank" rel="noopener">Las Artes Norte 1419</a>
-            <p style="font-size:15px;color:#C9D6E2;margin-top:4px">San Borja, Lima, Perú</p>
+            <p style="font-size:15px;color:#D9DDE1;margin-top:4px">San Borja, Lima, Perú</p>
           </div>
         </div>
         <div class="contact-side">
@@ -391,6 +446,10 @@
 
 </main>
 
+<a class="floating-wa" href="https://wa.me/51987111653?text=Hola%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" aria-label="Solicitar cotización por WhatsApp">
+  <span aria-hidden="true">↗</span> Cotizar por WhatsApp
+</a>
+
 <footer class="site">
   <div class="container">
     <span>Soria Proyect S.A.C · RUC 20614992051</span>
@@ -398,5 +457,28 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#site-nav');
+    if (!toggle || !nav) return;
+    function closeMenu() {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+    }
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
+    });
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 920) closeMenu();
+    });
+  }());
+</script>
 </body>
 </html>
